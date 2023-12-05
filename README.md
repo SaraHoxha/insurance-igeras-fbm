@@ -15,7 +15,7 @@ This website has been created as part of the "Fundamentals of Business Managemen
 
 ## Demo
 
-You can explore a live demo of this website [here]([https://youtu.be/OZs6_3Ql1d0?si=Nt3FZPjJ7SpqenBs]). Please note that this demo is for illustrative purposes. Feel free to navigate through the pages and interact with the content.
+You can explore a live demo of this website [here](https://youtu.be/OZs6_3Ql1d0?si=Nt3FZPjJ7SpqenBs). Please note that this demo is for illustrative purposes. Feel free to navigate through the pages and interact with the content.
 
 ## How to Use
 

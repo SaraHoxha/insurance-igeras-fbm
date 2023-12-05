@@ -1,0 +1,512 @@
+/*--------------------- Google fonts ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* --------------------- CSS Global variables ------------*/
+:root
+{
+
+	--logoBlue:#0f203f;
+	--logoGreen:#64be94; 
+	--logoGrey: #e5e5e5;
+
+	/*------------ Font Size --------------*/
+	--heading-font-size: 1.5rem;
+	--paragraph-font-size: 1rem;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	background-color: var(--logoBlue);
+	font-size: 18px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+.container
+{
+	padding: 2rem;
+}
+
+.heading
+{
+	font-size: 2.2rem;
+	font-weight: 600;
+	line-height: 1.2;
+	padding: 1rem 0;
+}
+
+.sub-heading
+{
+	color: #e5e5e5;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+p
+{
+	font-family: 'Inter', sans-serif;
+}
+
+.white
+{
+	color: #ffffff;
+}
+
+.para-line
+{
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	
+}
+
+.margin-left {
+	margin-left: 30px;
+}
+
+.btn
+{
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a
+{
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.body-color {
+	background-color: #0f203f;
+}
+
+.menu-container
+{
+  background-color:#0f203f;
+  width: 40%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+@keyframes moveUp
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateX(-50%) translateY(50px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+
+#topBtn
+{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  background: var(--logoBlue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+#topBtn ion-icon
+{
+	color: #fff;
+}
+/*----------- Scroll to top --------------*/
+
+/*---------- White btn ----------*/
+.btn-white
+{
+	background: white;
+	transition: 0.3s ease-in-out;
+}
+
+.btn-white:hover
+{
+	background: var(--logoBlue);
+}
+
+.btn-white > a
+{
+	color: #000;
+}
+
+.btn-white:hover > a
+{
+	color: white;
+}
+
+.btn-full-w
+{
+	padding: 1.2rem 2rem;
+	display: block;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.heading-container-with-play-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+
+.size-icon {
+	text-align: center;
+	margin: auto;
+	font-size: 2em;
+}
+
+.hero
+	{	
+		background: linear-gradient(rgba(255, 255, 255, 0.3), var(--logoGreen)), url("../img/health-insurance.jpg.webp");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 550px;
+}
+
+.hero .hero-container
+{	
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	margin-left: 30px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.hero-container .row > .col
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	gap: 1.4rem;
+}
+
+.hero-heading
+{
+	font-size: 2.3rem;
+	line-height: 1.1;
+	width:150%;
+	margin-right: 0;
+	padding: 30px;
+	
+	margin-left: -150px;
+}
+
+.inner-row .inner-col
+{
+	margin: 1rem 0;
+}
+
+
+
+
+.lead-form
+{
+	border: none;
+	border-radius: 12px;
+	margin: 2.5rem 0;
+	padding: 2rem 1.6rem;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.input-field
+{
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+}
+
+.input-field label
+{
+	font-size: 0.8rem;
+	font-weight: 600;
+	margin: 0.3rem 0;
+	text-transform: uppercase;
+}
+
+.input-field input
+{
+	font-size: 1rem;
+	border: var(--logoGreen) solid 1px;
+	border-radius: 5px;
+	padding: 1rem;
+	background: #f3f8ff;
+}
+
+.service-img
+{
+	border-radius: 5px;
+	width:15%;
+	height:auto;
+}
+
+.our-services .services
+{
+	margin-top: 20px;
+}
+
+.services .service
+{
+	border: none;
+	border-radius: 10px;
+	margin: 1.5rem 0;
+	padding: 1.8rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.services .service:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.service ion-icon
+{
+	color: var(--yellow-color);
+	font-size: 2.6rem;
+}
+
+.service .service-heading
+{
+	font-weight: 600;
+}
+
+
+	.container, .hero-container
+	{
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.container
+	{
+		padding: 0;
+	}
+
+	.heading
+	{
+		font-size: 3.2rem;
+	}
+
+	.para-line
+	{
+		line-height: 1.8;
+		width:100%;
+		text-align: center;
+	}
+
+
+	ul > li {
+		margin-bottom: 10px;
+	}
+	.sub-heading
+	{
+		font-size: 1rem;
+	}
+
+	.row
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.row .col
+	{
+		width: 100%;
+	}
+
+	.inner-row
+	{
+		display: flex;
+		gap: 10rem;
+		margin-left: 35%;
+	}
+	.hero-container .row > .hero-content
+	{
+		width: 150%;
+		margin-left: 350px;
+		text-align: center;
+		margin-top: -150px;
+	}
+
+	.hero-heading
+	{
+		font-size: 4rem;
+	}
+
+	.our-services
+	{
+		text-align: center;
+		height: 780px;
+		background-color: white;
+	}
+
+	.our-services .container .head-desc
+	{
+		max-width: 66%;
+		margin: 0 auto;
+	}
+
+	.services, .partners-grid
+	{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+	}
+
+	.form-container-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+	.container-form {
+		background-color: whitesmoke;
+
+	}
+
+    .input-field-flex {
+        flex: 0 50%; 
+        margin-bottom: 10px;
+    }
+
+    
+    .label-flex {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .button-flex {
+		text-transform: uppercase;
+        margin-top: 10px; 
+
+    }
+
+	.button-flex:hover {
+		background-color: var(--logoBlue);
+		color: #ffffff;
+	}
+
+	.insurance-output {
+		margin-top: 50px;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.paragraph-container {
+		margin-top: 5px;
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 20px;
+	}
+
+	.age-container {
+		display: flex;
+		align-items: left;
+		justify-content: left;
+		height: 20px;
+	}
+
+	p {
+		text-align: left;
+		font-size: 0.8rem;
+		font-weight: 800;
+		margin: 0.3rem 0;
+		text-transform: uppercase;
+	}
+	#selectedAge {
+		margin-left: 20px;
+	}
+
+
+	input {
+		margin-right: 5px;
+	}
+	.checkbox label {
+		display: flex;
+		align-items: center;
+	}
+	input[type="text"], input[type="address"]  {
+		border: 1px solid var(--logoGreen);
+	}
+
+	#outputparagraph {
+		font-size: larger;
+		margin-top: 30px;
+		align-self: center;
+		justify-items: center;
+		width: 100%;
+		color: var(--logoGreen);
+	}
+
+	#finalizebutton {
+		width: 150%;
+	}
+
+	#button-to-finalize {
+		width: 200px;
+		padding: 10px 20px;
+		margin-left: 600px;
+	}
+
+	#askforfinalization {
+		margin-bottom: 50px;
+	}
